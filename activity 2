@@ -1,0 +1,22 @@
+input.onButtonPressed(Button.A, () => {
+   basic.showLeds(`
+       . . . . .
+       . # . # .
+       . . . . .
+       # . . . #
+       . # # # .
+       `)
+})
+// Display a sad face when button B is pressed.
+input.onButtonPressed(Button.B, () => {
+   basic.showLeds(`
+       . . . . .
+       . # . # .
+       . . . . .
+       . # # # .
+       # . . . #
+       `)
+})
+basic.clearScreen()
+
+// happy sad face when button is pressed
