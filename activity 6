@@ -1,0 +1,21 @@
+let counter = 0
+let counting_down = false
+input.onButtonPressed(Button.A, function () {
+    counter += 1
+})
+input.onButtonPressed(Button.B, function () {
+    counting_down = true
+})
+basic.forever(function () {
+    basic.showNumber(counter)
+    if (counting_down == true) {
+        basic.pause(100)
+        counter += -1
+        if (counter <= 0) {
+            counting_down = false
+        }
+    }
+})
+
+
+// for my mini project i made a countdown timer
